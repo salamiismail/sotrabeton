@@ -1,21 +1,137 @@
-<doctype html>
-    <html>
-        <head>
-            <style>
-              body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                height: 100vh;
+            }
+            .image-container{
+                background-color: blueviolet;
+                width: 50%;
+            }
+            .content-container{            
+                width: 50%;
+            }
+            body{
+              background-color: aqua;
+            }
+           
+            .footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  padding: 6px;
 }
-        </style>
-            <title>  concernant les box    </title>
-        </head>
-            <body>
-<header>           sotrabeton is a big societe   </header>
+           .aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #fffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.header {
+  background-color: #9933cc;
+  color: #fffff;
+  padding: 6px;
+}
 
-<footer>  sotrabeton zou are welcom </footer>
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
-            </body>
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+            @media only screen and  (max-width: 768px) {
+              /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+                .container{
+                   flex-direction: column;
+               }
+               .image-container{
+                font-size: 40px;
+                width: 100%;
+            }
+            .content-container{
+                width: 100%;
+            }
+        }
     
-    </html>
+    </style>
+</head>
+    <body>
+  <main>
+    <div class="header">
+      <h1>SOTRABETON SARL</h1>
+    </div>
+    
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul>
+          <li>CAPITAL</li>
+          <li>MOYENS ET QUALIFICATIONS</li>
+          <li>CARRIERE PROF</li>
+          <li>PROUITS ET SERVICES</li>
+        </ul>
+      </div>
+     
+        <section class="container">
+            <div class="image-container">
+               <img src="https://www.voyageway.com/wp-content/uploads/2018/04/london-pass-quel-pass-pour-visiter-londres.jpg"
+               width="100%" height="100%">
+            </div>
+            <div class="content-container">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat modi laborum ab ipsa nesciunt? Qui cumque iusto dolorem et quasi nostrum ducimus omnis molestias ad, quos consequuntur excepturi perferendis beatae!
+            </div>
+            <div class="col-3 right">
+            <div class="aside">
+              <h2>sotrabeto</h2>
+              <p>capital.</p>
+              <h2>personnels</h2>
+              <p>carriere de la societe.</p>
+              <h2>les servicers de la ste</h2>
+              <p>la ste est specialise dans les activites.</p>
+            </div>
+          </div>
+          </section>
+            <section>
+       
+              <div class="footer">
+                <p>ste sotrabeton tout droits reserves.</p>
+              </div>
+            </section>
+      </main>
+           
+    </body>
+</html>
