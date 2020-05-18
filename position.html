@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ISMAIL SOTRABETON</title>
+
+    <style>
+        div{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+
+            flex-direction: row;
+
+
+
+            width: 200px;
+            height: 200px
+        }
+    </style>
+
+  </head>
+  <body>
+    
+
+        <div style="background-color: red; margin-bottom: 20px;margin-left:20px ;
+        position: absolute; bottom: 0 ;right: 0;
+        ">
+            <span>absolute Bottom Right </span>   
+    </div>
+
+    <div style="background-color: yellow ;position: fixed; top: 0 ;right: 0;width: 100%;">
+            <span>Fixed Div ( for example fixed header to top)</span>
+            
+    </div>
+
+</div>
+<div style="background-color: green;width: 200px;height: 100vh; z-index: 20;">
+           <span> position relative 1</span> 
+</div>
+<div style="background-color: tomato;width: 200px;height: 100vh;width: 100%;position: relative; display: block;">
+    <div style="background-color: slateblue;">1</div>
+
+    <div style="background-color: thistle; position:absolute; right: 0;top:0">2</div>
+</div>
+  </body>
+</html>
